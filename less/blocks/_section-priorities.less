@@ -1,0 +1,135 @@
+.section-priorities {
+    position: relative;
+    overflow: hidden;    //отображение обекта за пределами контейнера, в данном случаии все что не поместилось в контейнер - скрыто!!!
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #a4eecb;
+        top: -25px;
+        left: calc( ~"50% - 24px");
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);   /// поворот обьекта на 45градусов! 
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 50px;
+        padding-bottom: 0px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        padding-top: 70px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: #a4eecb;
+            top: 325px;
+            right: -85px;
+            left: auto;
+            width: 150px;
+            height: 150px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.section-priorities__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.section-priorities__img {
+
+    @media (min-width: 768px) {
+        padding-top: 0px;
+        position: relative;
+        width: 300px;
+        height: 485px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 470px;
+        height: 731px;
+        margin-right: 100px;
+    }
+}
+
+.img-ipad {
+    width: 100%;
+    max-width: 420px;
+    
+    @media (min-width: 768px) {
+        max-width: none;
+        width: auto;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.section-priorities__content {
+    width: auto;
+    padding-bottom: 50px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        width: 380px;
+        text-align: left;
+        margin-left: 45px;
+        padding-bottom: 100px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 470px;
+        margin-left: 130px;
+    }
+}
+
+.section-priorities__titel {
+    margin-bottom: 38px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 45px;
+    }
+}
+
+.section-priorities__header {
+    margin-bottom: 40px;
+    
+    @media (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+

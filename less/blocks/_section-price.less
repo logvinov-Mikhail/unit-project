@@ -1,0 +1,224 @@
+.section-price {
+    padding: 70px 0px 75px;
+    background-color: #49c38f;
+
+    @media (min-width: 768px) {
+        padding: 70px 0px 80px;
+        position: relative;
+
+        background-color: #000000;
+        background-image: url(/img/price-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        padding: 110px 0px 90px;
+    } 
+}
+
+.section-price__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+    color: #ffffff;
+    text-align: center;
+}
+
+.section-price__titel {
+    margin: 0;
+    margin-bottom: 35px;
+
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5;
+    
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+    
+    @media (min-width: 1200px) {
+        margin-bottom: 90px;
+    }
+ 
+}
+
+.section-price__header { 
+    margin: 0;
+    margin-bottom: 45px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    @media (min-width: 768px) {
+        font-size: 42px;
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 48px;
+        margin-bottom: 90px;
+    }   
+}
+
+.section-price__plans {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.price-plans__container {
+    width: 280px;
+    padding: 35px 0 40px;
+    margin-bottom: 25px;
+    position: relative;
+
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    transition: 0.8s ease;  
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 234px;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(84, 96, 101, 0.5);
+    }
+      
+    &:hover {
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.2); // что это ? 
+        background-color: #304ffe;
+        transform: scale(1.1); // что это ? 
+
+        margin-top: 35px;
+        margin-bottom: 45px; 
+    }
+
+
+    @media (min-width: 768px) {
+        width: 230px;
+        margin-bottom: 0;
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 10px 30px rgba(0, 0, 0, 0.2); // что это ? 
+            background-color: #304ffe;
+            transform: scale(1.1); // что это ? 
+
+            margin-top: 0;
+            margin-bottom: 0;  
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        width: 303px;
+    }   
+}
+
+.plans-rate {
+    margin-bottom: 25px;
+    color: #b3b3b3;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4.4px;
+}
+
+.plans-value {
+    margin-bottom: 25px;
+
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.plans-month {
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2; 
+
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+}
+
+.plans-servise {
+    margin-bottom: 35px;
+
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+.plans-servise ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plans-servise__button {
+    padding: 16px 35px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;  
+    color: #ffffff;
+
+    cursor: pointer;
+  
+    transition: background-color 0.2s ease;
+    
+    &:hover, &:focus {
+        outline: none;
+        background-color: #ffffff;
+        color: #666666;
+    }
+}
+
+
+  
